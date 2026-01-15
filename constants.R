@@ -2,7 +2,9 @@
 # Constants and Lists
 ####
 maxcell<-5e6
-base_tileset <- "Stadia.AlidadeSmooth"
+#base_tileset <- "Stadia.AlidadeSmooth"
+#base_tileset <- "OpenStreetMap.BZH"
+base_tileset <- "CartoDB.VoyagerNoLabels"
 
 #bbox_4326 <- c(-84.65134,  32.03136, -46.60617,  63.30299)
 bbox_4326 <- c(-85.06227,  37.35765, -43.84547,  58.27117)

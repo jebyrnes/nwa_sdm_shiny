@@ -95,7 +95,8 @@ server <- function(input, output) {
   
   output$dist <- renderLeaflet({
     leaflet() |>
-      addProviderTiles(base_tileset) |>
+     # addProviderTiles(base_tileset) |>
+      addTiles() |>
       fitBounds(bbox_4326[1], bbox_4326[2], 
                 bbox_4326[3], bbox_4326[4]) |>
       addLegend("bottomright",
@@ -157,7 +158,8 @@ server <- function(input, output) {
   # base env layer map
    output$env_layers <- renderLeaflet(
      leaflet() |>
-       addProviderTiles(base_tileset) |>
+      # addProviderTiles(base_tileset) |>
+       addTiles(base_tileset) |>
        fitBounds(bbox_4326[1], bbox_4326[2],
                  bbox_4326[3], bbox_4326[4])
    )
